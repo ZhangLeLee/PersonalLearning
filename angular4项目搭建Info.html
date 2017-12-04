@@ -1,0 +1,23 @@
+安装项目文件夹
+
+安装bootstrap popper jquery
+cnpm install popper jquery --save-dev
+cnpm install bootstrap@4.0.0-beta.2
+
+
+
+popper  的js
+
+在node_moules文件夹下找到jquery
+	dist文件夹下找到jquery.js, 拷贝文件路径(右击 Copy File Path)
+	在angular-cli.json文件下配置，如下
+		css样式写在"styles"下
+		"styles": [
+	        "styles.css",
+	        "../node_modules/_bootstrap@4.0.0-beta.2@bootstrap/dist/css/bootstrap.css"
+	    ],
+		"scripts": [
+		        "../node_modules/_jquery@3.2.1@jquery/dist/jquery.js",
+		        "../node_modules/_bootstrap@4.0.0-beta.2@bootstrap/dist/js/bootstrap.js"
+	      ],
+	
