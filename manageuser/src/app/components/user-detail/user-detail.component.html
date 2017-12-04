@@ -1,0 +1,33 @@
+<div class="container">
+	<div class="clearfix">
+		<a class="float-left" href="#" routerLink="/"><i class="fa fa-arrow-circle-left"></i> 返回首页</a>
+		<div class="btn btn-group float-right">
+            <a class="btn btn-light" [(routerLink)]="'/edit/'+user.id">编辑</a>
+            <a class="btn btn-danger" role="button" (click)="onDelete(user.id)">删除</a>
+        </div>
+	</div>
+
+	<div class="my-3">
+		<table class="table">
+			<thead class="bg-light">
+				<tr>
+					<th class="h2">{{user.name}}</th>
+					<th scope="col"></th>
+				</tr>
+			</thead>
+	        <tbody>
+	            <tr class="h2">
+	                <td>用户ID:{{user.id}}</td>
+	                <td class="float-right">收支: <span class="text-danger">{{user.balance}}元</span> <i class="fa fa-pencil"></i></td>
+	            </tr>
+	            <tr>
+	                <td class="lead">联系邮箱: {{user.email}}</td>
+	            </tr>
+	            <tr>
+	                <td class="lead">联系电话: {{user.phone}}</td>
+	            </tr>
+	        </tbody>
+    	</table>   	
+	</div>
+	
+</div>

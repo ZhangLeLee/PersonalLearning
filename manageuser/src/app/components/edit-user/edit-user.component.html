@@ -1,0 +1,29 @@
+<div class="container">
+	<a href="#" [(routerLink)]="'/user-detail/'+user.id"><i class="fa fa-arrow-circle-left"></i> 返回详情</a>
+
+	<div class="card my-3">
+		<div class="card-header">编辑用户</div>
+
+		<form action="" class="form-group card-body">
+			<div class="form-group-item mb-3">
+				<label>姓名</label>
+				<input type="text" class="form-control" [(ngModel)]="user.name" name="name">
+			</div>
+			<div class="form-group-item mb-3">
+				<label>邮箱</label>
+				<input type="text" class="form-control" [(ngModel)]="user.email" name="email">
+			</div>
+			<div class="form-group-item mb-3">
+				<label>电话</label>
+				<input type="text" class="form-control" [(ngModel)]="user.phone" name="phone">
+			</div>
+			<div class="form-group-item mb-3">
+				<label>收支</label>
+				<input type="text" class="form-control" [(ngModel)]="user.balance" name="balance">
+			</div>
+			<!-- (click)="onEdit(user)" -->
+			<button type="submit" class="btn btn-primary form-control my-3" (click)="onEdit()">编辑</button>
+		</form>
+	</div>
+	
+</div>
