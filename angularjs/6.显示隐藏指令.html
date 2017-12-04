@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script src="angular.min.js"></script>
+	<style>
+		div{
+			width: 100px;
+			height: 50px;
+			background: pink;
+		}
+	</style>
+</head>
+
+<body>
+	<div ng-app="">
+		<!-- 实例: 显示隐藏 -->
+		<div ng-click="state=!state">点击状态</div>
+		<div ng-show="state">显示</div>
+		<!-- <div ng-hide="state">隐藏</div> -->
+		{{state}}
+	</div>
+</body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>自定义指令模块化</title>
+	<script src="angular.min.js"></script>
+</head>
+<body ng-app="app"> 
+	<my-dire></my-dire>
+	<my-second></my-second>
+</body>
+<script>
+	var ang = angular.module("app",[]);
+	ang.directive("myDire",function(){ 
+		var obj = {
+			templateUrl:("./10.自定义指令模块化2.html")
+		}
+		return obj;
+	});
+	ang.directive("mySecond",function(){
+		var obj = {
+			templateUrl:("./10.3.html")
+		}
+		return obj;
+	})
+</script>
+</html>
+
+
+
+
+

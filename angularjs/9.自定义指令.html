@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>自定义指令</title>
+	<script src="angular.min.js"></script>
+</head>
+<body ng-app="app"> 
+	<!-- 不能使用驼峰命名法 -->
+	<my-dire></my-dire>
+
+	<div my-dire></div>
+	<div class="my-dire"></div>
+</body>
+<script>
+	var ang = angular.module("app",[]);
+	// restirct: C -> class A -> 属性  E -> 标签名
+	ang.directive("myDire",function(){   // 驼峰命名法
+		var obj = {
+			restrict:"CAE",
+			template:"<h1>你好<h1>"
+		}
+		return obj;
+	})
+
+/*
+	全局对象
+		html 有一个全局对象：window
+		angularjs 也有一个全局对象：angular
+
+	全局函数
+		全局对象angular下面定义的函数，都可以成为全局函数
+		module（模块）函数
+			1、创建一个新的模块
+				需要给两个参数：
+					第一个参数是字符串：代表模块名称
+					第二个参数是数组，数组里面放的是一堆字符串，每一个字符串代表着一个已有模块
+			2、获取一个已有模块
+				只需一个参数，也就是第一个参数
+*/
+
+</script>
+</html>
+
+

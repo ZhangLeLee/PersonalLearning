@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>过滤器</title>
+	<script src="angular.min.js"></script>
+</head>
+<body ng-app="app" ng-controller="controller">
+	<div>{{doller|currency}}</div>
+	<div>{{doller|currency:"￥"}}</div>
+	<div>{{name|lowercase}}</div>
+	<div>{{name|uppercase}}</div>
+	
+</body>
+<script>
+	var ang = angular.module("app",[]);
+	ang.controller("controller",function($scope){
+		$scope.name = "zhangsan"
+	})
+</script>
+</html>

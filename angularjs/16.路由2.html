@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>路由</title>
+	<script src="angular.min.js"></script>
+	<script src="angular-route.min.js"></script>
+</head>
+<body ng-app="app">
+	<a href="#/aa">跳转aa</a>
+	<a href="#/bb">跳转bb</a>
+	<ng-view></ng-view>
+</body>
+<script>
+	var app = angular.module("app",['ngRoute']);
+	app.config(function($routeProvider){
+		$routeProvider.when("/aa",{
+			templateUrl:"./16.路由template.html"
+		});
+		$routeProvider.when("/bb",{
+			templateUrl:"./16.路由template2.html"
+		});
+	})
+</script>
+</html>
+
+
+
+
+
+
+
+

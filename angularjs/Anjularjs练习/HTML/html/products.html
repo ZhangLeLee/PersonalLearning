@@ -1,0 +1,19 @@
+<div class="container">
+	<div class="row" ng-controller="productController">
+		<div class="col-md-3" >
+			<button ng-class="categoryStateClass('全部显示')" ng-click="getAllProducts()" class="btn btn-default btn-lg btn-block active" name="button">全部显示</button>
+			<button ng-class="categoryStateClass(item)" ng-click="categoryClick(item)" ng-repeat="item in allProducts|categoryFilter:'category'" class="btn btn-default btn-lg btn-block" name="button">{{item}}</button>
+		</div>
+		<div class="col-md-9">
+			<div class="well" ng-repeat="item in perPageArr">
+				<h3>{{item.name}}<span class="pull-right label label-primary">{{item.price|currency:"￥"}}</span></h3>
+				<span class="lead">{{item.description}}</span>
+				<button class="pull-right btn btn-success" ng-click="buy(item)">加入购物车</button>
+			</div>
+			<!-- 分页 -->
+			<div class="btn-group pull-right">
+				<button ng-class="pageStateClass(num)" ng-click="getPerPageArr(num)" ng-repeat="num in pageNum" class="btn btn-default">{{num}}</button>
+			</div>
+		</div>
+	</div>
+</div>

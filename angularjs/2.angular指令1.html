@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script src="angular.min.js"></script>
+</head>
+<!-- angular指令: 开头都是ng-, 使用的地方都在标签的属性里面 -->
+<body ng-app="">
+	<input type="text" name="" value="" ng-model="num1">
+	<input type="text" name="" value="" ng-model="num2">
+	<div ng-bind="num1+num2"></div>
+	<!-- {{num1+num2}} -->
+</body>
+</html>
+<!-- 
+	ngApp(ng-app):一个项目中只能出现一次这个指令。作用是定义一个应用程序的作者是谁。如果把ng-app写在了html标签里，表示html是应用程序的所有者，如果把ng-app写在了body里，表示body是应用程序的所有者。如果写在div里面，表示div是应用程序的所有者。
+
+	把ng-app指定给某个标签后，这个标签内部就可以使用Angularjs的其他只领了，这个标签外面的的区域使用Angularjs无效（会报错）。 
+-->
+
+
+
+

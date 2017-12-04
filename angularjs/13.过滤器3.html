@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>过滤器</title>
+	<script src="angular.min.js"></script>
+</head>
+<body ng-app="app">
+	<div ng-controller="myController">
+		<ul>
+			<li ng-repeat="item in arr|filter:'li'" ng-bind="item.name"></li>
+		</ul>
+	</div>
+</body>
+<script>
+	var ang = angular.module("app",[]);
+	ang.controller("myController",function($scope){
+		$scope.arr = [
+			{name:"zhangsan",sex:"男",age:19},
+			{name:"lili",sex:"女",age:23},
+			{name:"wuwu",sex:"男",age:21}
+		]
+	})
+</script>
+</html>

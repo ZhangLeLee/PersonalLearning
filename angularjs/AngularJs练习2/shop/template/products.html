@@ -1,0 +1,20 @@
+na<div class="row panel panel-default" ng-controller="productsCtrl">
+	<div class="col-md-3">
+		<!-- 字符串一定要加单引号，不加会当成变量处理 -->
+		<button ng-click="getProductsOfCategory('全部')" class="btn btn-default btn-block btn-lg" ng-class="getClass('全部')">全部</button>
+		<button ng-repeat="p in products|unique:'category'" ng-click="getProductsOfCategory(p)" class="btn btn-default btn-block btn-lg" ng-class="getClass(p)">{{p}}</button>
+	</div>
+	<div class="col-md-9">
+		<div>
+			<div class="well" ng-repeat="product in perPageProducts">
+				<h3>{{product.name}}<span class="pull-right label label-primary">{{product.price|currency:'￥'}}</span></h3>
+				<button ng-click="addToCart(product)" class="pull-right btn btn-success">加入购物车</button>
+				<span class="lead">{{product.description}}</span>
+			</div>
+		</div>
+		<!-- 分页按钮 -->
+		<div class="pull-right btn-group">
+			<button class="btn btn-default" ng-repeat="page in pages" ng-click="getProductsPerpage(page)" ng-class="getClassOfPage(page)">{{page}}</button>
+		</div>
+	</div>	
+</div>

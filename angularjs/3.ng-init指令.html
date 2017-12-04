@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script src="angular.min.js"></script>
+</head>
+<!-- <body ng-app="" ng-init="world='蓝鸥'">
+	<input type="text" ng-model="world">
+	{{world}}
+</body> -->
+<body>
+	<!-- <div ng-app="" ng-init="world=['蓝鸥','你好']">
+		<input type="text" ng-model="world[0]">
+		{{world[0]}}
+	</div> -->
+	<!-- <div ng-app="" ng-init="world={name:'蓝鸥',age:'5'}">
+		<input type="text" ng-model="world.age">
+		{{world.age}}
+	</div> -->
+	<div ng-app="" ng-init="world=[{name:'蓝鸥',age:'5'}]">
+		<input type="text" ng-model="world[0].name">
+		<input type="text" ng-model="world[0].age">
+		{{world[0].name+world[0].age}}
+	</div>
+</body>
+</html>

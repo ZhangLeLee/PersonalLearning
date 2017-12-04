@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Controller</title>
+	<script src="angular.min.js"></script>
+</head>
+<body ng-app="first">
+	<div ng-controller="my">
+		{{a}}
+		{{arr[0]}}
+		{{person.name}}
+	</div>
+	<div ng-controller="second">
+		{{s}}
+	</div>
+</body>
+<script>
+	// 1. 创建angular对象
+	// first: 整个angular的作用范围
+	// []->依赖
+	var ang = angular.module("first",[]);
+	var m = 100;
+	ang.controller("my",function($scope){
+		$scope.a = m;
+		$scope.arr = ["one","two","third"];
+		$scope.person = {name:"dede"};
+	});
+	ang.controller("second",function($scope){
+		$scope.s = 12;
+	})
+</script>
+</html>

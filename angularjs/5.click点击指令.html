@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script src="angular.min.js"></script>
+	<style>
+	div{
+			width: 100px;
+			height: 100px;
+			background: pink;
+		}
+	</style>
+</head>
+
+<body>
+	<div ng-app="" ng-init="state=false">
+		<div ng-click="state=!state">状态值</div>
+		<!-- <div ng-mouseover="state=!state">移入移出</div> -->
+		<!-- <div ng-mouseout="state=!state">移入移出</div> -->
+		<br>{{state}}
+	</div>
+</body>
+</html>

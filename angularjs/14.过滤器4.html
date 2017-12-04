@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>过滤器</title>
+	<script src="angular.min.js"></script>
+</head>
+<body ng-app="app">
+	<div ng-controller="myController">
+		<ul>
+			<li ng-repeat="item in arr|myFilter:'sex'" ng-bind="item" ng-click="sexClick(item)"></li>
+		</ul>
+
+		<ul>
+			<li ng-repeat="item in sexArray" ng-bind="item.name"></li>
+		</ul>
+	</div>
+</body>
+<script>
+	// 模块: 
+	var fil = angular.module("myfilters",[]);
+	fil.filter("myFilter",function(){
+		// 返回一个数组, 
+		// data: 查询的数组
+		// property: 原数据的属性
+		return function(data,property){
+			if(angular.isArray(data)){
+				// 创建一个返回的数组
+				var sexs = [];
+				var obj = {};
+				for (var i = 0; i < data.length; i++) {
+					var myObj = data[i];
+					var value = myObj[property]; //myObj.sex value: 男和女
+					if(angular.isUndefined(obj[value])){
+						sexs.push(value);
+						obj[value] = true; //obj.男和obj.女
+					}
+				}
+				return sexs;
+			}
+			return [];
+		}
+	})
+
+
+	var app = angular.module("app",["myfilters"]);
+	app.controller("myController",function($scope){
+		$scope.arr = [
+			{name:"zhangsan",sex:"男",age:19},
+			{name:"lili",sex:"女",age:23},
+			{name:"wuwu",sex:"男",age:21},
+			{name:"yyy",sex:"女",age:22},
+			{name:"hghg",sex:"男",age:23}
+		];
+		// $scope.sexArray = [];
+		$scope.sexClick = function(value){
+			$scope.sexArray = [];
+			for (var i = 0; i < $scope.arr.length; i++) {
+				var obj = $scope.arr[i];
+				if(obj.sex === value){
+					$scope.sexArray.push(obj);
+				}
+			}
+		}
+	})
+</script>
+</html>

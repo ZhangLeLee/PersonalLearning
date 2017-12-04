@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>服务</title>
+	<script src="angular.min.js"></script>
+</head>
+<body ng-app="app">
+	<div ng-controller="myController">
+		<div ng-repeat="item in arr" ng-bind="item"></div>
+	</div>	
+</body>
+<script>
+	var app = angular.module("app",[]);
+/*
+	$http: 放在controller第二个参数(函数)的形参中, 而且名字不能改变
+
+	1. get请求参数直接放到url里面
+	2. post请求:  
+	 	1. 需要设置Content-Type
+		2. 添加transformRequest属性将data中的对象转换成key=value&key=value这种字符串
+*/
+
+	app.controller("myController",function($scope,$http){
+		// $scope.arr = [];
+		$http({
+			// get请求
+			// method:"get",
+			// url:"./17.text.php?name=zhangsan",
+			// data:{
+
+			// }
+
+			// post请求
+			method:"post",
+			url:"./17.text.php",
+			headers:{
+				"Content-Type":"application/x-www-form-urlencoded"
+			},
+			data:{
+				name:"张三"  //name=张三&pwd=111
+			},
+			transformRequest:function(obj){
+				var str = [];
+				for(var v in obj){
+					str.push(encodeURIComponent(v)+"="+encodeURIComponent(obj[v]))
+				}
+				return str.join("&");
+			}
+		}).then(function(res){
+			console.log(res.data);
+			// $scope.arr = res.data;
+		},function(error){
+			console.log(error);
+		})
+	})
+</script>
+</html>
+
+
+
+
+
+

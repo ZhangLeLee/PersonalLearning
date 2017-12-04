@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script src="angular.min.js"></script>
+</head>
+<body ng-app="first">
+	<div ng-controller="myC">
+		{{a}}
+	</div>
+</body>
+<script src="http://libs.baidu.com/jquery/1.11.3/jquery.min.js"></script>
+<script>
+	var app = angular.module("first",[]);
+	// ajax网络请求  get 网络请求是异步的网络请求, 代码会报错
+	// $.get("./8.angular-controller.php",function(value){
+	// 	app.controller("myC",function($scope){
+	// 		$scope.a = value;
+	// 	})
+	// });
+
+	// 同步的ajax
+	// var value = $.ajax({
+	// 	url:"./8.angular-controller.php",
+	// 	async:false
+	// }).responseText;
+	// app.controller("myC",function($scope){
+	// 	$scope.a = value;
+	// })
+</script>
+</html>
+
+
+
+
+
+
+

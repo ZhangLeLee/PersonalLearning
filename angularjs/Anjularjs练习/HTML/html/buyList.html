@@ -1,0 +1,25 @@
+<div class="container">
+	<h2>您的购物车</h2>
+	<table class="table table-striped">
+		<thead>
+			<tr>
+				<td>商品名称</td>
+				<td class="text-center">单价</td>
+				<td class="text-center">数量</td>
+				<td class="text-center">小计</td>
+				<td class="text-center">删除</td>	
+			</tr>
+		</thead>
+		<tbody>
+			<tr ng-repeat="item in buyObjs.arr">
+				<td>{{item.obj.name}}</td>
+				<td class="text-center">{{item.obj.price}}</td>
+				<td class="text-center">{{item.num}}</td>
+				<td class="text-center">{{item.num * item.obj.price}}</td>
+				<td class="text-center"><button ng-click="deleteObj(item.obj)" class="btn btn-danger">删除</button></td>	
+			</tr>
+		</tbody>
+			
+			
+	</table>
+</div>

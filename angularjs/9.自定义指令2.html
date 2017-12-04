@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>自定义指令</title>
+	<script src="angular.min.js"></script>
+</head>
+<body ng-app="test"> 
+	<my-dire></my-dire>
+	<div my-dire></div>
+	<div class="my-dire"></div>
+	<my-dire>  <!-- 标签之间的hahahaha会自动过滤掉 -->
+		hahahaha
+	</my-dire>
+
+</body>
+<script>
+	var app = angular.module("test",[]);
+	app.directive("myDire",function(){ 
+		var obj = {
+			restrict:"CAE",
+			template:"<ul><li>dede<ng-transclude></ng-transclude></li><li>titi</li></ul>",
+			// replace:true,
+			transclude:true  
+			// transclude 的作用是将<my-dire></my-dire>中的hahahaha显示
+		}
+		return obj;
+	})
+</script>
+</html>
+
+

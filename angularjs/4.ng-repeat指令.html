@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script src="angular.min.js"></script>
+</head>
+
+<body>
+	<!-- <div ng-app="" ng-init="arr=['one','two','third']">
+		<ul ng-repeat="item in arr">
+			<li>{{item}}</li>
+		</ul>
+	</div> -->
+	<div ng-app="" ng-init="arr=[{name:'one'},{name:'two'},{name:'third'}]">
+		<ul ng-repeat="item in arr">
+			<li>{{item.name}}</li>
+		</ul>
+	</div>
+</body>
+</html>
