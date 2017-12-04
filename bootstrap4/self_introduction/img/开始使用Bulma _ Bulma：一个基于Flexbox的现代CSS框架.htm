@@ -1,0 +1,725 @@
+<!DOCTYPE html>
+<!-- saved from url=(0046)https://bulma.io/documentation/overview/start/ -->
+<html lang="en" class="route-documentation translated-ltr"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Bulma is an open source CSS framework based on Flexbox and built with Sass. It&#39;s 100% responsive, fully modular, and available for free.">
+
+  <title>开始使用Bulma |  Bulma：一个基于Flexbox的现代CSS框架</title>
+
+  <link rel="stylesheet" href="./开始使用Bulma _ Bulma：一个基于Flexbox的现代CSS框架_files/font-awesome.min.css">
+  
+  
+  
+  <link rel="stylesheet" href="./开始使用Bulma _ Bulma：一个基于Flexbox的现代CSS框架_files/bulma-docs.css">
+
+  <link rel="canonical" href="https://bulma.io/documentation/overview/start/">
+  <link rel="alternate" type="application/rss+xml" title="Bulma：一个基于Flexbox的现代CSS框架" href="https://bulma.io/feed.xml">
+
+  <meta property="og:url" content="https://bulma.io">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Bulma: a modern CSS framework based on Flexbox">
+  <meta property="og:image" content="https://bulma.io/images/bulma-banner.png">
+  <meta property="og:image:type" content="image/png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:description" content="Bulma is an open source CSS framework based on Flexbox and built with Sass. It&#39;s 100% responsive, fully modular, and available for free.">
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:site" content="@jgthms">
+  <meta name="twitter:creator" content="@jgthms">
+  <meta name="twitter:title" content="Bulma: a modern CSS framework based on Flexbox">
+  <meta name="twitter:image" content="https://bulma.io/images/bulma-banner.png">
+  <meta name="twitter:description" content="Bulma is an open source CSS framework based on Flexbox and built with Sass. It&#39;s 100% responsive, fully modular, and available for free.">
+
+  <link rel="apple-touch-icon" sizes="180x180" href="https://bulma.io/favicons/apple-touch-icon.png?v=201701041855">
+  <link rel="icon" type="image/png" href="https://bulma.io/favicons/favicon-32x32.png?v=201701041855" sizes="32x32">
+  <link rel="icon" type="image/png" href="https://bulma.io/favicons/favicon-16x16.png?v=201701041855" sizes="16x16">
+  <link rel="manifest" href="https://bulma.io/favicons/manifest.json?v=201701041855">
+  <link rel="mask-icon" href="https://bulma.io/favicons/safari-pinned-tab.svg?v=201701041855" color="#00d1b2">
+  <link rel="shortcut icon" href="https://bulma.io/favicons/favicon.ico?v=201701041855">
+  <meta name="msapplication-config" content="https://bulma.io/favicons/browserconfig.xml?v=201701041855">
+  <meta name="theme-color" content="#00d1b2">
+<script async="" src="./开始使用Bulma _ Bulma：一个基于Flexbox的现代CSS框架_files/analytics.js"></script><script id="facebook-jssdk" async="" defer="" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&amp;version=v2.8&amp;appId=310296819307942"></script><script id="_carbonads_projs" type="text/javascript" src="./开始使用Bulma _ Bulma：一个基于Flexbox的现代CSS框架_files/C6AILKT.json"></script><script id="_bsa_srv-CVAIKK3E_0" type="text/javascript" src="./开始使用Bulma _ Bulma：一个基于Flexbox的现代CSS框架_files/CVAIKK3E.json"></script><style type="text/css">#mc_embed_signup input.mce_inline_error { border-color:#6B0505; } #mc_embed_signup div.mce_inline_error { margin: 0 0 1em 0; padding: 5px 10px; background-color:#6B0505; font-weight: bold; z-index: 1; color:#fff; }</style><link type="text/css" rel="stylesheet" charset="UTF-8" href="./开始使用Bulma _ Bulma：一个基于Flexbox的现代CSS框架_files/translateelement.css"></head>
+
+  <body class="layout-documentation page-overview" style="zoom: 1;">
+    
+
+    <div class="container">
+  <nav class="navbar ">
+  <div class="navbar-brand">
+    <a class="navbar-item" href="https://bulma.io/">
+      <img src="./开始使用Bulma _ Bulma：一个基于Flexbox的现代CSS框架_files/bulma-logo.png" alt="Bulma：一个基于Flexbox的现代CSS框架" width="112" height="28">
+    </a>
+
+    <a class="navbar-item is-hidden-desktop" href="https://github.com/jgthms/bulma" target="_blank">
+      <span class="icon" style="color: #333;">
+        <i class="fa fa-lg fa-github"></i>
+      </span>
+    </a>
+
+    <a class="navbar-item is-hidden-desktop" href="https://twitter.com/jgthms" target="_blank">
+      <span class="icon" style="color: #55acee;">
+        <i class="fa fa-lg fa-twitter"></i>
+      </span>
+    </a>
+
+    <div class="navbar-burger burger" data-target="navMenuDocumentation">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+  </div>
+
+  <div id="navMenuDocumentation" class="navbar-menu">
+    <div class="navbar-start">
+      <div class="navbar-item has-dropdown is-hoverable">
+        <a class="navbar-link  is-active" href="https://bulma.io/documentation/overview/start/"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+          文件
+        </font></font></a>
+        <div class="navbar-dropdown ">
+          <a class="navbar-item is-active" href="https://bulma.io/documentation/overview/start/">
+            Overview
+          </a>
+          <a class="navbar-item " href="https://bulma.io/documentation/modifiers/syntax/">
+            Modifiers
+          </a>
+          <a class="navbar-item " href="https://bulma.io/documentation/columns/basics/">
+            Columns
+          </a>
+          <a class="navbar-item " href="https://bulma.io/documentation/layout/container/">
+            Layout
+          </a>
+          <a class="navbar-item " href="https://bulma.io/documentation/form/general/">
+            Form
+          </a>
+          <a class="navbar-item " href="https://bulma.io/documentation/elements/box/">
+            Elements
+          </a>
+          
+            <a class="navbar-item " href="https://bulma.io/documentation/components/breadcrumb/">
+              Components
+            </a>
+          
+          <hr class="navbar-divider">
+          <div class="navbar-item">
+            <div>
+              <p class="is-size-6-desktop">
+                <strong>0.6.0</strong>
+              </p>
+              
+                <small>
+                  <a class="bd-view-all-versions" href="https://versions.bulma.io/">View all versions</a>
+                </small>
+              
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="navbar-item has-dropdown is-hoverable">
+        <a class="navbar-link " href="https://bulma.io/blog/"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+          博客
+        </font></font></a>
+        <div id="blogDropdown" class="navbar-dropdown " data-style="width: 18rem;">
+          
+            <a class="navbar-item" href="https://bulma.io/2017/10/09/roses-are-red-links-are-blue/">
+              <div class="navbar-content">
+                <p>
+                  <small class="has-text-link">09 Oct 2017</small>
+                </p>
+                <p>Roses are red – Links are blue</p>
+              </div>
+            </a>
+          
+            <a class="navbar-item" href="https://bulma.io/2017/08/03/list-of-tags/">
+              <div class="navbar-content">
+                <p>
+                  <small class="has-text-link">03 Aug 2017</small>
+                </p>
+                <p>New feature: list of tags</p>
+              </div>
+            </a>
+          
+            <a class="navbar-item" href="https://bulma.io/2017/08/01/bulma-bootstrap-comparison/">
+              <div class="navbar-content">
+                <p>
+                  <small class="has-text-link">01 Aug 2017</small>
+                </p>
+                <p>Bulma / Bootstrap comparison</p>
+              </div>
+            </a>
+          
+          <a class="navbar-item" href="https://bulma.io/blog/">
+            More posts
+          </a>
+          <hr class="navbar-divider">
+          <div class="navbar-item">
+            <div class="navbar-content">
+              <div class="level is-mobile">
+                <div class="level-left">
+                  <div class="level-item">
+                    <strong>Stay up to date!</strong>
+                  </div>
+                </div>
+                <div class="level-right">
+                  <div class="level-item">
+                    <a class="button bd-is-rss is-small" href="https://bulma.io/atom.xml">
+                      <span class="icon is-small">
+                        <i class="fa fa-rss"></i>
+                      </span>
+                      <span>Subscribe</span>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="navbar-item has-dropdown is-hoverable">
+        <div class="navbar-link"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+          更多
+        </font></font></div>
+        <div id="moreDropdown" class="navbar-dropdown ">
+          <a class="navbar-item " href="https://bulma.io/bulma-start/">
+            <p>
+              <strong>Bulma start</strong>
+              <br>
+              <small>A tiny npm package to get started</small>
+            </p>
+          </a>
+          <hr class="navbar-divider">
+          <a class="navbar-item " href="https://bulma.io/made-with-bulma/">
+            <p>
+              <strong>Made with Bulma</strong>
+              <br>
+              <small>The official community badge</small>
+            </p>
+          </a>
+          <hr class="navbar-divider">
+          <a class="navbar-item " href="https://bulma.io/extensions/">
+            <p>
+              <strong>Extensions</strong>
+              <br>
+              <small>Side projects to enhance Bulma</small>
+            </p>
+          </a>
+        </div>
+      </div>
+      <a class="navbar-item " href="https://bulma.io/expo/">
+        <span class="bd-emoji"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">⭐️</font></font></span><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> 
+        世博
+       </font></font></a>
+      <font style="vertical-align: inherit;"><a class="navbar-item " href="https://bulma.io/love/"><span class="bd-emoji"><font style="vertical-align: inherit;">❤️</font></span></a><a class="navbar-item " href="https://bulma.io/love/"><font style="vertical-align: inherit;"> 
+        爱
+      </font></a></font><a class="navbar-item " href="https://bulma.io/love/">
+        <span class="bd-emoji"><font style="vertical-align: inherit;"></font></span><font style="vertical-align: inherit;"></font></a>
+    </div>
+
+    <div class="navbar-end">
+      <a class="navbar-item is-hidden-desktop-only" href="https://github.com/jgthms/bulma" target="_blank">
+        <span class="icon" style="color: #333;">
+          <i class="fa fa-lg fa-github"></i>
+        </span>
+      </a>
+      <a class="navbar-item is-hidden-desktop-only" href="https://twitter.com/jgthms" target="_blank">
+        <span class="icon" style="color: #55acee;">
+          <i class="fa fa-lg fa-twitter"></i>
+        </span>
+      </a>
+      <div class="navbar-item">
+        <div class="field is-grouped">
+          <p class="control">
+            <a class="bd-tw-button button" data-social-network="Twitter" data-social-action="tweet" data-social-target="https://bulma.io" target="_blank" href="https://twitter.com/intent/tweet?text=Bulma:%20a%20modern%20CSS%20framework%20based%20on%20Flexbox&amp;hashtags=bulmaio&amp;url=https://bulma.io&amp;via=jgthms">
+  <span class="icon">
+    <i class="fa fa-twitter"></i>
+  </span>
+  <span><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+    鸣叫
+  </font></font></span>
+</a>
+
+          </p>
+          <p class="control">
+            <a class="button is-primary" href="https://github.com/jgthms/bulma/releases/download/0.6.0/bulma-0.6.0.zip">
+              <span class="icon">
+                <i class="fa fa-download"></i>
+              </span>
+              <span><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">下载</font></font></span>
+            </a>
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</nav>
+
+</div>
+
+<section class="hero is-link">
+  <div class="hero-body">
+    <div class="container">
+      <div class="columns is-vcentered">
+        <div class="column">
+          <p class="title"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+            文档
+          </font></font></p>
+          <p class="subtitle"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+            一切你需要</font></font><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">创建一个网站</font></font></strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">与布尔玛
+          </font></font></p>
+        </div>
+        <div class="column is-narrow">
+          <div id="carboncontainer">
+<div id="carbon" class="box">
+  <script>
+    var _0xa6d2 = [
+      '\x73\x63\x72\x69\x70\x74',
+      '\x70\x61\x72\x65\x6e\x74\x4e\x6f\x64\x65',
+      '\x72\x65\x6d\x6f\x76\x65\x43\x68\x69\x6c\x64',
+      '\x73\x70\x6c\x69\x74',
+      '\x63\x72\x65\x61\x74\x65\x45\x6c\x65\x6d\x65\x6e\x74'
+    ];
+    (function (_0x2fd559, _0x28dd75) {
+      var _0x78c626 = function (_0x497400) {
+        while (--_0x497400) {
+          _0x2fd559['\x70\x75\x73\x68'](_0x2fd559['\x73\x68\x69\x66\x74']());
+        }
+      };
+      _0x78c626(++_0x28dd75);
+    }(_0xa6d2, 0x125));
+    var _0x2a6d = function (_0x8ed41, _0x381cfd) {
+      _0x8ed41 = _0x8ed41 - 0x0;
+      var _0x546dea = _0xa6d2[_0x8ed41];
+      return _0x546dea;
+    };
+    function __fb(_0x5ea579) {
+      var _0x3142de = '\x30\x7c\x31\x7c\x34\x7c\x33\x7c\x35\x7c\x32'[_0x2a6d('0x0')]('\x7c'), _0x58dc19 = 0x0;
+      while (!![]) {
+        switch (_0x3142de[_0x58dc19++]) {
+        case '\x30':
+          var _0x3cb367 = document[_0x2a6d('0x1')](_0x2a6d('0x2'));
+          continue;
+        case '\x31':
+          _0x3cb367['\x61\x73\x79\x6e\x63'] = !![];
+          continue;
+        case '\x32':
+          _0x5ea579[_0x2a6d('0x3')][_0x2a6d('0x4')](_0x5ea579);
+          continue;
+        case '\x33':
+          _0x3cb367['\x73\x72\x63'] = '\x2f\x2f\x63\x72\x62\x63\x64\x6e\x2e\x6a\x73\x66\x69\x64\x64\x6c\x65\x2e\x6e\x65\x74\x2f\x63\x61\x72\x62\x6f\x6e\x2e\x6a\x73\x3f\x7a\x6f\x6e\x65\x69\x64\x3d\x31\x36\x37\x33\x26\x73\x65\x72\x76\x65\x3d\x43\x36\x41\x49\x4c\x4b\x54\x26\x70\x6c\x61\x63\x65\x6d\x65\x6e\x74\x3d\x62\x75\x6c\x6d\x61\x69\x6f\x26\x63\x64\x3d\x73\x72\x76\x2e\x6a\x74\x2e\x6d\x73';
+          continue;
+        case '\x34':
+          _0x3cb367['\x69\x64'] = _0x5ea579['\x69\x64'];
+          continue;
+        case '\x35':
+          _0x5ea579[_0x2a6d('0x3')]['\x69\x6e\x73\x65\x72\x74\x42\x65\x66\x6f\x72\x65'](_0x3cb367, _0x5ea579);
+          continue;
+        }
+        break;
+      }
+    }
+  </script>
+  <script async="" src="./开始使用Bulma _ Bulma：一个基于Flexbox的现代CSS框架_files/carbon.js" id="_carbonads_js" onerror="__fb(this)"></script><div id="carbonads"><span><span class="carbon-wrap"><a href="https://www.graphicstock.com/join/browse?utm_campaign=AFFGS-BSACPA-affiliate-site1-joinbrowse&amp;utm_medium=affiliate&amp;utm_source=AFFGS-BSACPA-affiliate-site1-joinbrowse" class="carbon-img" target="_blank" rel="noopener"><img src="./开始使用Bulma _ Bulma：一个基于Flexbox的现代CSS框架_files/28536" alt="" border="0" height="100" width="130" style="max-width: 130px;"></a><a href="https://www.graphicstock.com/join/browse?utm_campaign=AFFGS-BSACPA-affiliate-site1-joinbrowse&amp;utm_medium=affiliate&amp;utm_source=AFFGS-BSACPA-affiliate-site1-joinbrowse" class="carbon-text" target="_blank" rel="noopener"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">90％无限下载从超过300,000载体，图形和照片中选择。</font></font></a></span><a href="http://carbonads.net/?utm_source=bulmaio&amp;utm_medium=ad_via_link&amp;utm_campaign=in_unit&amp;utm_term=carbon" class="carbon-poweredby" target="_blank"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">通过碳的广告</font></font></a></span></div>
+</div>
+</div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="hero-foot">
+    <div class="container">
+      <nav class="tabs is-boxed">
+        <ul>
+          <li class="is-active">
+            <a href="https://bulma.io/documentation/overview/start/"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">概观</font></font></a>
+          </li>
+          <li>
+            <a href="https://bulma.io/documentation/modifiers/syntax"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">修饰符</font></font></a>
+          </li>
+          <li>
+            <a href="https://bulma.io/documentation/columns/basics"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">列</font></font></a>
+          </li>
+          <li>
+            <a href="https://bulma.io/documentation/layout/container/"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">布局</font></font></a>
+          </li>
+          <li>
+            <a href="https://bulma.io/documentation/form/general"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">形成</font></font></a>
+          </li>
+          <li>
+            <a href="https://bulma.io/documentation/elements/box/"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">分子</font></font></a>
+          </li>
+          <li>
+            
+              <a href="https://bulma.io/documentation/components/breadcrumb/"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">组件</font></font></a>
+            
+          </li>
+        </ul>
+      </nav></div>
+    </div>
+  
+</section>
+
+<nav class="navbar has-shadow">
+  <div class="container">
+    <div class="navbar-tabs">
+      <a class="navbar-item is-tab is-active" href="https://bulma.io/documentation/overview/start/"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+        启动
+       </font></font></a>
+      <a class="navbar-item is-tab " href="https://bulma.io/documentation/overview/customize/"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+        自定义
+       </font></font></a>
+      <a class="navbar-item is-tab " href="https://bulma.io/documentation/overview/classes/"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+        类
+       </font></font></a>
+      <a class="navbar-item is-tab " href="https://bulma.io/documentation/overview/modular/"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+        模块化
+       </font></font></a>
+      <a class="navbar-item is-tab " href="https://bulma.io/documentation/overview/responsiveness/"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+        响应速度
+       </font></font></a>
+      <a class="navbar-item is-tab " href="https://bulma.io/documentation/overview/variables/"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+        变量
+       </font></font></a>
+      <a class="navbar-item is-tab " href="https://bulma.io/documentation/overview/colors/"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+        颜色
+       </font></font></a>
+      <a class="navbar-item is-tab " href="https://bulma.io/documentation/overview/functions/"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+        功能
+       </font></font></a>
+      <a class="navbar-item is-tab " href="https://bulma.io/documentation/overview/mixins/"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+        混入
+      </font></font></a>
+    </div>
+  </div>
+</nav>
+
+
+<section class="section">
+  <div class="container">
+    <h1 class="title"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">入门</font></font></h1>
+    <h2 class="subtitle"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">你只需要</font></font><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">1个CSS文件</font></font></strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">使用布尔玛</font></font></h2>
+
+    <hr>
+
+    <div class="content">
+      <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+        有几种方法</font></font><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">可以开始</font></font></strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">使用Bulma。</font><font style="vertical-align: inherit;">你可以：
+      </font></font></p>
+      <ol>
+        <li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+          使用</font></font><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">npm</font></font></strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">安装Bulma包
+        </font></font></li>
+        <li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+          使用cdnjs </font></font><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">CDN</font></font></strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">链接到Bulma样式表
+        </font></font></li>
+        <li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+          使用</font></font><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">GitHub存储库</font></font></strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">获取最新的开发版本
+        </font></font></li>
+      </ol>
+    </div>
+
+    <article class="media is-large">
+      <div class="media-left">
+        <p class="title is-5"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">1</font></font></p>
+      </div>
+      <div class="media-content">
+        <p class="title is-5"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+          使用</font></font><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">NPM </font></font></strong> <em><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">（推荐）</font></font></em><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">：
+        </font></font></p>
+        <figure class="highlight"><pre><code class="language-bash" data-lang="bash">npm install bulma</code></pre><button class="button is-small bd-copy"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">复制</font></font></button></figure>
+      </div>
+    </article>
+
+    <article class="media is-large">
+      <div class="media-left">
+        <p class="title is-5"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">2</font></font></p>
+      </div>
+      <div class="media-content">
+        <p class="title is-5"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+          使用</font></font><a href="https://cdnjs.com/" target="_blank"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">cdnjs </font></font></a> <strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">CDN </font></font></strong>
+          <br>
+          <a href="https://cdnjs.com/libraries/bulma"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">https://cdnjs.com/libraries/bulma</font></font></a>
+        </p>
+      </div>
+    </article>
+
+    <article class="media is-large">
+      <div class="media-left">
+        <p class="title is-5"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">3</font></font></p>
+      </div>
+      <div class="media-content">
+        <p class="title is-5"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+          从</font></font><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">存储库</font></font></strong>
+          <font style="vertical-align: inherit;"><a href="https://github.com/jgthms/bulma/tree/master/css"><font style="vertical-align: inherit;">https://github.com/jgthms/bulma/tree/master/css</font></a><font style="vertical-align: inherit;">下载</font></font><br>
+          <a href="https://github.com/jgthms/bulma/tree/master/css"><font style="vertical-align: inherit;"></font></a>
+        </p>
+      </div>
+    </article>
+
+    <hr>
+
+    <div class="message is-info">
+      <div class="message-header"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+        字体真棒图标
+      </font></font></div>
+      <div class="message-body">
+        <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">如果要使用Bulma的图标，不要忘记包含</font></font><a href="https://fortawesome.github.io/Font-Awesome/"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Font Awesome</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">：</font></font></p>
+        <figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;link</span> <span class="na">rel=</span><span class="s">"stylesheet"</span> <span class="na">href=</span><span class="s">"https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"</span><span class="nt">&gt;</span></code></pre><button class="button is-small bd-copy"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">复制</font></font></button></figure>
+      </div>
+    </div>
+
+    <hr style="margin-bottom: 0;">
+
+<h3 id="starter-template" class="title is-4 is-spaced bd-anchor-title"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+  入门模板
+   </font></font><a class="bd-anchor-link" href="https://bulma.io/documentation/overview/start/#starter-template"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+    ＃
+  </font></font></a>
+</h3>
+
+
+    <div class="content">
+      <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+        如果你想开始</font></font><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">向右走</font></font></strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">，你可以使用这个</font></font><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">HTML模板首发</font></font></strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">。</font><font style="vertical-align: inherit;">只需将该代码复制/粘贴到文件中并将其保存在计算机上即可。
+      </font></font></p>
+    </div>
+
+    <div class="bd-example highlight-full">
+      <figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="cp">&lt;!DOCTYPE html&gt;</span>
+<span class="nt">&lt;html&gt;</span>
+  <span class="nt">&lt;head&gt;</span>
+    <span class="nt">&lt;meta</span> <span class="na">charset=</span><span class="s">"utf-8"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;meta</span> <span class="na">name=</span><span class="s">"viewport"</span> <span class="na">content=</span><span class="s">"width=device-width, initial-scale=1"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;title&gt;</span>Hello Bulma!<span class="nt">&lt;/title&gt;</span>
+    <span class="nt">&lt;link</span> <span class="na">rel=</span><span class="s">"stylesheet"</span> <span class="na">href=</span><span class="s">"https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;link</span> <span class="na">rel=</span><span class="s">"stylesheet"</span> <span class="na">href=</span><span class="s">"https://cdnjs.cloudflare.com/ajax/libs/bulma/0.6.0/css/bulma.min.css"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;/head&gt;</span>
+  <span class="nt">&lt;body&gt;</span>
+  <span class="nt">&lt;section</span> <span class="na">class=</span><span class="s">"section"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"container"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;h1</span> <span class="na">class=</span><span class="s">"title"</span><span class="nt">&gt;</span><font></font>
+        Hello World<font></font>
+      <span class="nt">&lt;/h1&gt;</span>
+      <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"subtitle"</span><span class="nt">&gt;</span>
+        My first website with <span class="nt">&lt;strong&gt;</span>Bulma<span class="nt">&lt;/strong&gt;</span>!
+      <span class="nt">&lt;/p&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;/section&gt;</span>
+  <span class="nt">&lt;/body&gt;</span>
+<span class="nt">&lt;/html&gt;</span></code></pre><button class="button is-small bd-copy"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">复制</font></font></button></figure>
+    </div>
+
+  </div>
+</section>
+
+
+<section class="section bd-typo">
+  <div class="container">
+    <p class="has-text-centered has-text-grey-light">
+      <a href="https://bulma.io/made-with-bulma/">
+        <img src="./开始使用Bulma _ Bulma：一个基于Flexbox的现代CSS框架_files/made-with-bulma.png" alt="用布尔加做" width="128" height="24">
+      </a>
+      <br><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+      这个页面是</font></font><strong class="has-text-grey"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">开源的</font></font></strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">。</font><font style="vertical-align: inherit;">注意到打字错误？</font><font style="vertical-align: inherit;">还是有什么不清楚的？
+      </font></font><a class="has-text-grey" href="https://github.com/jgthms/bulma/blob/master/docs/documentation/overview/start.html" style="border-bottom: 1px solid currentColor;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+        在GitHub上改进此页面
+      </font></font></a>
+    </p>
+  </div>
+</section>
+
+
+    <script src="./开始使用Bulma _ Bulma：一个基于Flexbox的现代CSS框架_files/monetization.js" type="text/javascript"></script>
+
+<section class="hero is-info bsa">
+  <div class="container">
+    <div class="columns is-vcentered">
+      <div class="column is-4">
+        <p class="title"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Bulma </font></font><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">合作伙伴</font></font></strong></p>
+        <p class="subtitle"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">查看他们的产品！</font></font></p>
+      </div>
+
+      <div class="column is-8">
+        <div class="bsa-cpc"></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<script>
+  (function(){
+    if(typeof _bsa !== 'undefined' && _bsa) {
+    _bsa.init('default', 'CVAIKK3E', 'placement:bulmaio', {
+      target: '.bsa-cpc',
+      align: 'horizontal',
+      disable_css: 'true'
+    });
+      }
+  })();
+</script>
+
+
+<section id="newsletter" class="hero is-primary">
+  <div class="hero-body">
+    <div class="container">
+      <!-- Begin MailChimp Signup Form -->
+      <div id="mc_embed_signup" class="columns is-vcentered">
+        <div class="column is-one-third is-left">
+          <p class="title"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">布马</font></font><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">通讯</font></font></strong></p>
+          <p class="subtitle"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">当v1准备好时收到通知！</font></font></p>
+        </div>
+
+        <div class="column">
+          <form action="https://bbxdesign.us3.list-manage.com/subscribe/post?u=b43b93fe633f0560b2a72a69c&amp;id=52585e8803" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate="novalidate">
+            <div id="mc_embed_signup_scroll">
+              <div class="field is-grouped">
+                <div class="control has-icons-left is-expanded">
+                  <input type="email" value="" name="EMAIL" class="input is-flat required email" id="mce-EMAIL" placeholder="email address" required="" aria-required="true">
+                  <span class="icon is-small is-left">
+                    <i class="fa fa-envelope"></i>
+                  </span>
+                </div>
+                <div class="control">
+                  <font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><input type="submit" value="订阅" name="subscribe" id="mc-embedded-subscribe" class="button is-white is-outlined"></font></font>
+                </div>
+              </div>
+              <div id="mce-responses">
+                <div class="notification is-danger response" id="mce-error-response" style="display:none"></div>
+                <div class="notification is-success response" id="mce-success-response" style="display:none"></div>
+              </div>
+              <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+              <div style="position: absolute; left: -5000px;" aria-hidden="true">
+                <input type="text" name="b_b43b93fe633f0560b2a72a69c_52585e8803" tabindex="-1" value="">
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+      <!--End mc_embed_signup-->
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="container">
+    <div class="columns">
+      <div class="column is-3">
+        <div id="about" class="content">
+          <strong xmlns:dct="http://purl.org/dc/terms/" href="http://purl.org/dc/dcmitype/Text" property="dct:title" rel="dct:type"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">布尔玛</font></font></strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">由</font></font><a xmlns:cc="http://creativecommons.org/ns#" href="http://jgthms.com/" property="cc:attributionName" rel="cc:attributionURL"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">杰里米·托马斯</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">。
+          </font></font><p id="alternative">
+            <a href="https://bulma.io/alternative-to-bootstrap/"><font style="vertical-align: inherit;"><strong><font style="vertical-align: inherit;">Bootstrap</font></strong><font style="vertical-align: inherit;">的替代方法</font></font><strong><font style="vertical-align: inherit;"></font></strong></a>
+          </p>
+          <div class="twitter-container">
+            <a href="https://twitter.com/jgthms" class="twitter-follow-button" data-show-count="true" data-lang="en" data-size="large"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">@jgthms</font></font></a>
+          </div>
+        </div>
+      </div>
+      <div class="column is-5">
+        <div id="share" class="content">
+          <div>
+            <strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">支持</font></font></strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">和分享爱！
+          </font></font></div>
+          <div id="social">
+            <iframe class="github-btn" src="./开始使用Bulma _ Bulma：一个基于Flexbox的现代CSS框架_files/github-btn.html" allowtransparency="true" frameborder="0" scrolling="0" width="160px" height="30px"></iframe>
+
+            <a href="https://twitter.com/share" class="twitter-share-button" data-text="Bulma: a modern CSS framework based on Flexbox" data-url="https://bulma.io" data-count="horizontal" data-via="jgthms" data-related="jgthms:Creator of Bulma" data-size="large"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">鸣叫</font></font></a>
+
+            <form class="paypal-form" action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+              <input type="hidden" name="cmd" value="_s-xclick">
+              <input type="hidden" name="hosted_button_id" value="8WMKYSRFN6A78">
+              <input type="image" src="./开始使用Bulma _ Bulma：一个基于Flexbox的现代CSS框架_files/paypal-donate.png" border="0" name="submit" alt="PayPal  - 更安全，更简单的在线支付方式。" height="30">
+              <img alt="" border="0" src="./开始使用Bulma _ Bulma：一个基于Flexbox的现代CSS框架_files/pixel.gif" width="1" height="1">
+            </form>
+
+            <div class="fb-like" data-href="https://www.facebook.com/bulmaio" data-layout="button" data-action="like" data-size="large" data-show-faces="false" data-share="true"></div>
+          </div>
+        </div>
+      </div>
+      <div class="column is-4">
+        <div id="sister">
+          <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+            更有</font></font><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">用的</font></font></strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">工具：
+          </font></font></p>
+          <ul>
+            <li>
+              <a href="http://cssreference.io/">
+                <img src="./开始使用Bulma _ Bulma：一个基于Flexbox的现代CSS框架_files/css-reference-logo.png" alt="CSS参考标志">
+              </a>
+            </li>
+            <li>
+              <a href="http://htmlreference.io/">
+                <img src="./开始使用Bulma _ Bulma：一个基于Flexbox的现代CSS框架_files/html-reference-logo.png" alt="HTML参考标志">
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="columns">
+      <div class="column is-3">
+        <p id="tsp">
+          <a href="https://bulma.io/made-with-bulma/">
+            <img src="./开始使用Bulma _ Bulma：一个基于Flexbox的现代CSS框架_files/made-with-bulma.png" alt="用布尔加做" width="128" height="24">
+          </a>
+          <small><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+            获得</font></font><a href="https://bulma.io/made-with-bulma/"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">徽章</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">！
+            </font></font><br><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+            源代码许可</font></font><a href="http://opensource.org/licenses/mit-license.php"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">MIT</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">。
+            </font></font><br><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+            网站内容授权</font></font><a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">CC BY-NC-SA 4.0</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">。
+          </font></font></small>
+        </p>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script src="./开始使用Bulma _ Bulma：一个基于Flexbox的现代CSS框架_files/clipboard-1.7.1.min.js"></script>
+<script src="./开始使用Bulma _ Bulma：一个基于Flexbox的现代CSS框架_files/main.js"></script>
+
+
+
+<div id="fb-root"></div>
+
+<script async="" defer="" type="text/javascript">(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.async = true;
+  js.defer = true;
+  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.8&appId=310296819307942";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+<script async="" defer="" id="twitter-wjs" src="https://platform.twitter.com/widgets.js"></script>
+<script async="" defer="" type="text/javascript" src="./开始使用Bulma _ Bulma：一个基于Flexbox的现代CSS框架_files/mc-validate.js"></script>
+
+<script async="" defer="" type="text/javascript">
+  (function() {
+    window.fnames = new Array();
+    window.ftypes = new Array();
+    fnames[0]='EMAIL';
+    ftypes[0]='email';
+  }());
+  // var $mcj = window.jQuery.noConflict(true);
+</script>
+
+<script async="" defer="" type="text/javascript">
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-82634666-2', 'auto');
+  ga('send', 'pageview');
+</script><div id="goog-gt-tt" class="skiptranslate" dir="ltr"><div style="padding: 8px;"><div><div class="logo"><img src="./开始使用Bulma _ Bulma：一个基于Flexbox的现代CSS框架_files/translate_24dp.png" width="20" height="20" alt="Google 翻译"></div></div></div><div class="top" style="padding: 8px; float: left; width: 100%;"><h1 class="title gray">原文</h1></div><div class="middle" style="padding: 8px;"><div class="original-text"></div></div><div class="bottom" style="padding: 8px;"><div class="activity-links"><span class="activity-link">提供更好的翻译建议</span><span class="activity-link"></span></div><div class="started-activity-container"><hr style="color: #CCC; background-color: #CCC; height: 1px; border: none;"><div class="activity-root"></div></div></div><div class="status-message" style="display: none;"></div></div>
+
+
+
+  
+
+<div class="goog-te-spinner-pos"><div class="goog-te-spinner-animation"><svg xmlns="http://www.w3.org/2000/svg" class="goog-te-spinner" width="96px" height="96px" viewBox="0 0 66 66"><circle class="goog-te-spinner-path" fill="none" stroke-width="6" stroke-linecap="round" cx="33" cy="33" r="30"></circle></svg></div></div></body></html>
