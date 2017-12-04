@@ -1,0 +1,151 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script src="https://unpkg.com/vue"></script>
+	<link rel="stylesheet" href="style.css">
+	<style>
+		#wrap .progress{
+			background: pink;
+			height: 30px;
+		}
+	</style>
+</head>
+<body>
+	<div id="wrap">
+		<div v-if="this.widthData > 300/2">
+			<img v-bind:src="src1" alt="">
+		</div>
+		<div v-else-if="this.widthData <= 300/2">
+			<img v-bind:src="src2" alt="">
+		</div>
+		
+		
+		<div class="progress" v-bind:style="{width:widthData + 'px'}"></div>
+		<button v-on:click="getWidth()">punch</button>
+		<button v-on:click="restart()">restart</button>
+	</div>	
+</body>
+<script src="app.js"></script>
+<script>
+	new Vue({
+		el:"#wrap",
+		data:{
+			widthData:300,
+			src1:"img/bag.png",
+			src2:"img/bag-burst.png"
+		},
+		methods:{
+			getWidth:function(){
+				return this.widthData -= 20;
+			},
+			restart:function(){
+				this.widthData = 300
+			}
+		},
+		computed:{
+
+		}
+	});
+</script>
+</html>
+
+ -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script src="https://unpkg.com/vue"></script>
+	<link rel="stylesheet" href="style.css">
+	<style>
+		#bag{
+			width: 200px;
+			height: 500px;
+			margin: 0 auto;
+			background: url(img/bag.png) center no-repeat;
+			background-size: 80%;
+		}
+		#bag-health{
+			border: 2px solid #000;
+			width: 200px;
+			margin: 0 auto 20px;
+		}
+		#bag-health div{
+			height: 20px;
+			background: crimson;
+		}
+		#controls{
+			width: 115px;
+			margin: 0 auto;
+		}
+		#bag.burst{
+			background-image: url(img/bag-burst.png);
+		}
+	</style>
+</head>
+<body>
+	<div id="wrap">
+		<!-- img -->
+		<div id="bag" v-bind:class="{burst:ended}"></div>
+
+		<!-- bag health -->
+		<div id="bag-health">
+			<div v-bind:style="{width: health + '%'}"></div>
+		</div>
+
+		<!-- 按钮 -->
+		<div id="controls">
+			<button v-on:click="punch" v-show="!ended">punch</button>
+			<button v-on:click="restart">restart</button>
+		</div>
+		
+	</div>	
+</body>
+<script src="app.js"></script>
+<script>
+	new Vue({
+		el:"#wrap",
+		data:{
+			health:100,
+			ended:false
+		},
+		methods:{
+			punch:function(){
+				this.health -= 10;
+				if (this.health <= 0) {
+					this.ended = true;
+				}
+			},
+			restart:function(){
+				this.health = 100;
+				this.ended = false;
+			}
+		},
+		computed:{
+
+		}
+	});
+</script>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

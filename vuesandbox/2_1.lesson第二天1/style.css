@@ -1,0 +1,18 @@
+span{
+	background: hotpink;
+	padding: 10px;
+	color: white;
+	display: inline-block;
+	margin: 10px 0;
+}
+
+.changeColor span{
+	background: red;
+}
+
+.changeWidth span{
+	border: 1px dashed #eef;
+	width: 300px;
+}
+
+

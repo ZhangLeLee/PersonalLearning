@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Vue.js</title>
+	<!-- 引入vue - CDN -->
+	<!-- 使用CDN引入到head里面 -->
+	<script src="https://unpkg.com/vue"></script>
+	<!-- 引入css样式 -->
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<!-- DOM标签的容器 -->
+	<div id="vue-app">
+		<h1>动态css样式</h1>
+		
+		<h2>实例 1</h2>
+		<!-- <div v-bind:class="{red:true,blue:true}"></div>    -->  <!-- 无法动态 -->
+		<div v-on:click="changeColor = !changeColor" v-bind:class="{changeColor:changeColor}">
+			<span>dede</span>
+		</div>
+
+		<h2>实例 2</h2>
+		<button v-on:click="changeColor = !changeColor">
+			changeColor
+		</button>
+		<button v-on:click="changeWidth = !changeWidth">
+			changeWidth
+		</button>
+		<!-- <div v-bind:class="{changeColor,changeWidth}"> -->
+		<div v-bind:class="compClass">
+			<span>{{name}}</span>
+		</div>
+		
+	</div>
+	
+</body>
+<script src="app.js"></script>
+</html>
+
+
+
+
+
+
+
+
+
+
+

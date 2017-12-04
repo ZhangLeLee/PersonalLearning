@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Vue.js</title>
+	<!-- 引入vue - CDN -->
+	<!-- 使用CDN引入到head里面 -->
+	<script src="https://unpkg.com/vue"></script>
+	<!-- 引入css样式 -->
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<!-- DOM标签的容器 -->
+	<div id="vue-app">
+		<h1>Events事件</h1>
+
+		<!-- 点击事件 -->
+		<!-- <button v-on:click="age++">加一岁</button>
+		<button v-on:click="age- -">减一岁</button> -->
+		<button v-on:click.once="addAge(1)">加一岁</button>
+		<button v-on:click="subtractAge(1)">减一岁</button>
+
+		<button v-on:dblclick="addAge(10)">加10岁</button>
+		<button v-on:dblclick="subtractAge(10)">减10岁</button>
+
+		<p>我的年龄是：{{age}}</p>
+
+
+		<!-- 鼠标事件 -->
+		<!-- @: 相当于v-on,作用相同 -->
+		<div id="canvas" @mousemove="moveXY">
+			{{x}}, {{y}}
+
+			<!-- 事件修饰符 -->
+			<span @mousemove.stop="stopPropagation">阻止事件冒泡</span>
+			<span v-on:mousemove.stop=""> 可不用写方法</span>
+		</div>
+
+		
+		<!-- 事件修饰符 -->
+		<a v-on:click.prevent="alert" href="http://baidu.com">Baidu</a>
+		<!-- .prevent 标签默认事件不会执行 -->
+		
+		<br>
+
+		<!-- 键盘事件 -->
+		<label>姓名: </label>
+		<input type="text" v-on:keyup.enter="logName">
+
+		<label>年龄 :</label>
+		<input type="text" v-on:keyup.alt.enter="logAge">
+	</div>
+	
+</body>
+<script src="app.js"></script>
+</html>
+
+
+
+
+
+
+
+
+

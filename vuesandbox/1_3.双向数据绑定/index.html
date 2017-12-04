@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Vue.js</title>
+	<!-- 引入vue - CDN -->
+	<!-- 使用CDN引入到head里面 -->
+	<script src="https://unpkg.com/vue"></script>
+	<!-- 引入css样式 -->
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<!-- DOM标签的容器 -->
+	<div id="vue-app">
+		<h1>双向数据绑定</h1>
+		<label>姓名</label>
+		<!-- 双向数据绑定 -->
+		<!-- <input ref="name" type="text" v-bind:value="name" v-on:keyup="logName"> -->
+		<input type="text" v-model="name">
+		
+		<span>{{name}}</span>
+
+		<label>年龄</label>
+		<!-- <input type="text" v-on:keyup="logAge" v-bind:value="age" ref="age"> -->
+		<input type="text" v-model="age">
+		<span>{{age}}</span>
+		
+	</div>
+	
+</body>
+<script src="app.js"></script>
+</html>
+
+
+
+
+
+
+
+
+

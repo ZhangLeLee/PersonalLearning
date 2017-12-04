@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Vue.js</title>
+	<!-- 引入vue - CDN -->
+	<!-- 使用CDN引入到head里面 -->
+	<script src="https://unpkg.com/vue"></script>
+	<!-- 引入css样式 -->
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<!-- DOM标签的容器 -->
+	<div id="vue-app">
+		<h1>if条件语句</h1>
+
+		<button v-on:click="error = !error">Toggle Error</button>
+		<button v-on:click="success = !success">toggle Success</button>
+		
+		<!-- <p v-if="error">网络链接失败: 404</p>
+		<p v-else-if="success">网络链接成功: 200</p> -->
+
+		<p v-show="error">网络链接失败: 404</p>
+		<p v-show="success">网络链接成功: 200</p>
+		
+	</div>
+	
+</body>
+<script src="app.js"></script>
+</html>
+
+
+
+
+
+
+
+
+
+
+
