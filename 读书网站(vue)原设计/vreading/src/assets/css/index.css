@@ -1,0 +1,96 @@
+.bodyWidth{width: 1200px;margin: 0 auto;}
+.bgbody{background: rgb(81,156,154);}
+.textbody{color: rgb(81,156,154);}
+.fontColor,.hexagon a{color: rgb(73,63,63);}
+.borderddd,.zTab tbody tr td{border: 1px solid #ddd;}
+.fontbody{font-size: 14px;}
+.fonti i{font-size: 1.5em;}
+.bgH4{background: rgb(241,242,231);}
+.mc{margin: 0 auto;}
+.textIndent{text-indent: 30px;}
+
+.zbglightgray{background: rgb(242,242,242);}
+.znav{height: 30px;border: 1px solid #ddd;}
+.znav-title{line-height: 30px;font-size: 14px;}
+.rg a:hover,.home-readAndcons>div>a:hover,.zfooter-title:hover,.readAndcBox .zh6:hover,.newscon-h5:hover,.side2-conRouter:hover,.hexagon a{text-decoration: none;}
+
+.logo{border: 1px solid white;}
+.zbtnhover{position:relative; top: 20px;left: 20px;}
+.zbtnhover button:hover{color: rgb(81,156,154);}
+
+.divRouter{width: 12.5%;text-align: center;color: rgb(73,63,63);transition: all 0.4s;border-bottom: 2px solid rgb(73,63,63);}
+.divRouter:hover,.chineseBoxRouter:hover{text-decoration: none;color: rgb(186,97,90);cursor:pointer;}
+.divRouterActive{color: rgb(186,97,90);border-bottom:2px solid rgb(186,97,90);}
+.ads>a>img{margin-bottom: 11px;}
+
+/* Home页选项卡 */
+.hide{display: none;}
+.menu div{cursor: pointer; border-bottom: 1px solid #ccc; text-align: center;}
+.zTab .content,.ztable{width: 100%;}
+.ztableOne tr td,.ztableTwo tr td{transition: all 0.4s;font-size: 13px;color: rgb(73,63,63);padding: 9px 8px;width: 100%;text-align: center;}
+.ztable tbody tr td:hover{border: 1px solid rgb(186,97,90);color: rgb(186,97,90);}
+.ztableThree tr td{transition: all 0.4s;padding: 5px 7px 6px 7px;text-align: center;font-size: 13px;color: rgb(73,63,63);width: 100%;}
+
+/* home 读书资讯 */
+.home-readAndcons>div>a{font-size: 14px;}
+.home-readAndcons>div>i{font-size: 12px; color: #ccc;}
+/* hover 黄色 */
+.home-readAndcons>div>a:hover,.zh6:hover,.side2-con>div>i,.side2-conRouter:hover,.hexagon a:hover{color: rgb(186,97,90);}
+.readAndcBox p,.eyesAndthunbs,.eyesAndthunbs i,.onlineBook-box p,.chineseBox>p,.newscon-span>span,#consulationInfo>p{font-size: 12px;color: rgb(121,117,121);}
+
+/* 在线读书 */
+.onlineBook-box>div{width: 140px; height: 220px;}
+
+/* 推荐读书 */
+.borderline{height: 1px; background: #ddd;width: 100%;}
+.borderline2{height: 2px; background: #ddd;width: 100%;}
+.tuijianSide>div>i,.tuijianSide-chinese>div>i{color: rgb(121,117,121);font-size: 14px;float: left;}
+.tuijianSide>div>span,.tuijianSide-chinese>div>span{color: rgb(73,63,63);font-size: 14px;float: left;}
+.tuijianSide>div>span:hover,.tuijianSide-chinese>div>span:hover,.newscon-h5:hover{color: rgb(186,97,90);}
+.tuijianSide>div>img{width: 100px;float: left;left: 20px;display: none;}
+.sideHorver,.sideHorver-chinese{padding: 12px 16px;}
+.tuijianMore{font-size: 14px;color: rgb(73,63,63);padding: 13px 16px;}
+.tuijianMore>div>i{margin-left: 6px;}
+.tuijianMore>div>span{margin-left: 5px;}
+
+/* 古典书籍 */
+.chineseBox>span{font-size: 12px;}
+.tuijianSide-chinese>div>img{width: 70px;float: left;left: 20px;display: none;}
+
+
+/* consultation 页面 */
+.zH4{padding-left: 33px;}
+.newscon-img{width: 200px;height: 124px;}
+/* swiper 轮播 */
+#swiperCon>div>div>img{width: 378px;height: 260px;}
+#swiperNav>div>div{border: 2px solid white;margin-left: 1px;}
+#swiperNav>div>div>img{width: 54px;height: 40px;}
+
+
+/* 读书导航 */
+.readNavBox{width:100%;background:#eee;border-radius:20px;padding:20px 0 0 30px;position: relative;}
+/* 正六边形的实现 */
+.hexagon,.boxS,.boxT{width: 150px;height: 200px;overflow: hidden;}
+.hexagon{transform: rotate(120deg);float: left;margin-left: 10px;-ms-transform: rotate(120deg);-moz-transform: rotate(120deg);-webkit-transform: rotate(120deg);visibility: hidden;}
+.boxS{transform: rotate(-60deg);-ms-transform: rotate(-60deg);-moz-transform: rotate(-60deg);-webkit-transform: rotate(-60deg);visibility: hidden;}
+.boxT{background: #fff !important;transform: rotate(-60deg);background: no-repeat 50% center;background-size: 125% auto;-ms-transform: rotate(-60deg);-moz-transform: rotate(-60deg);-webkit-transform: rotate(-60deg);visibility: visible;}
+.hexagon-span{position: relative;top: -30px;}
+.hexagonsTwo{position: relative;left: 80px;top: -60px;}
+.hexagonsThree{position: relative;top: -120px;}
+.hexagon:hover{}
+
+
+/* footer */
+.zfooter-title,.newscon-p,.side2-con>div>div{color: rgb(121,117,121);font-size: 14px;}
+.zfooter-title:hover,.info-p{color: rgb(121,117,121);}
+
+
+
+
+
+
+
+
+
+
+
