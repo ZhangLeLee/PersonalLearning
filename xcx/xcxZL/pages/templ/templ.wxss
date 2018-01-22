@@ -1,0 +1,47 @@
+/* pages/templ/templ.wxss */
+.wrap{
+  /* display:flex;
+  justify-content:space-between; */
+  border: 1px solid;
+  height: 500rpx;
+  width: 500rpx;
+  /* overflow: hidden; */
+}
+.wrap view{
+  width: 400rpx;
+  height: 500rpx;
+}
+.red{
+  background: red;
+}
+.blue{
+  background: blue;
+}
+.green{
+  background: green;
+}
+.yellow{
+  background: lightblue;
+}
+
+.cont{
+  font-size: 100rpx;
+}
+
+.btnActive{
+  color: red;
+}
+
+/* 设置输入框的颜色 */
+/* .input-placeholder{
+  color: blue;
+} */
+
+textarea{
+  border: 1px solid rebeccapurple;
+}
+
+.navigator-hover{
+  font-size: 30px;
+}
+

@@ -1,0 +1,101 @@
+<!--pages/frame/frame.wxml-->
+<!-- <text>{{name}}</text>
+<view>{{age}}</view>
+<view>{{arr}}</view>
+<view>{{arr[2]}}</view> -->
+<!-- <button bindtap='goOther'>跳转到组件模块logs(出现在tabBar中的路径不能跳转)</button> -->
+
+<!-- navigator: 相当于a标签 -->
+<!-- <navigator url='../../pages/logs/logs'>跳转</navigator> -->
+
+<!-- <button bindtap='say' id="{{name}}">sayhi</button> -->
+
+<!-- <view wx:if='{{bol}}'></view>
+<view wx:if="{{age>17}}">年龄太大</view> -->
+
+<!-- <view>{{2+1}}</view>
+<view>{{"2"+1}}</view>
+<view>{{2}}+{{1}}</view>
+<view>{{"age: "+age}}</view> -->
+
+<!-- <view wx:for="arr">{{item}}</view> -->
+<!-- <view wx:for="{{arr}}">{{item}}</view> -->
+<!-- <view wx:for="{{arr}}">{{item}}.{{index}}</view> -->
+<!-- <view wx:for="{{jsonArr}}">{{item.a}}+{{item.b}}</view>  -->
+<!-- 自定义数组元素和索引值 -->
+<!-- <view wx:for="{{arr}}" wx:for-item="i">{{i}}</view>
+<view wx:for="{{arr}}" wx:for-index="aa">{{aa}}</view> -->
+
+
+<!-- 双层for循环 乘法口诀表 -->
+<!-- <view wx:for="{{arri}}" wx:for-item="a">
+  <view wx:for="{{arrj}}" wx:for-item="b" style='display:inline-block'>
+    <view wx:if="{{a>=b}}">
+     {{a}}*{{b}}={{a*b}}
+    </view>
+  </view>
+</view> -->
+
+<!-- wx:if/hidden -->
+<!-- <button bindtap="likeBtn">切换</button>
+<text hidden='{{bol}}'>不</text>喜欢我 -->
+
+
+
+<!-- 定义一个模块 -->
+<!-- <template name="obj"> -->
+  <!-- <view>{{name}}</view> -->
+   <!-- <view>{{a}} {{b}} {{c}} {{d.a}}</view>  -->
+   <!-- <view>{{a}} {{b}}</view>  -->
+<!-- </template> -->
+<!-- 使用模块 -->
+<!-- <template is="obj" data="{{name:'123'}}"></template> -->
+<!-- <template is="obj" data="{{name}}"></template> -->
+<!-- <template is="obj" data="{{a:1,b:2,c:age,d:obj}}"></template> -->
+<!-- <template is="obj" data="{{...obj}}"></template> -->
+
+
+<!-- 事件 -->
+<!-- <view bindtap='clickTarget' id='10'>点击</view> -->
+
+
+<!-- <view id='auter' bindtap='outerTap'>
+  auter center
+  <view id='middle' catchtap='middleTap'>
+    middle center
+    <view id='inner' catchtap='innerTap' data-item-id="123">
+      inner center
+    </view>
+  </view>
+</view> -->
+
+
+
+<!-- import引用 模块引入 -->
+<!-- <import src="item.wxml" /> -->
+<!-- 使用模块 -->
+<!-- <template is="item"></template> -->
+<!-- <template is="item" data="{{name:'thisisdedee'}}"></template>  -->
+
+<!-- include引用 相当于把代码直接拷贝过来 -->
+<!-- <include src="item.wxml" /> -->
+
+
+
+<!-- wxs -->
+<!-- 引入wxs -->
+<!-- <wxs src="frame.wxs" module="frame" />
+<view>{{frame.a}}{{frame.b}}</view>
+
+<wxs module="foo">
+var some_msg = "hello world";
+module.exports = {
+    msg : some_msg,
+}
+</wxs>
+<view> {{foo.msg}} </view> -->
+
+
+
+<view class='cont' style='width:{{w}};'></view>
+

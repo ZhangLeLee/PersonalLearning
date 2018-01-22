@@ -1,0 +1,41 @@
+{
+  "pages": [
+    "pages/api/api",
+    "pages/template/template",
+    "pages/frame/frame",
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/test/test"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#000",
+    "navigationBarTitleText": "首页",
+    "navigationBarTextStyle": "white"
+  },
+  "tabBar": {
+    "color": "#8a8a8a",
+    "selectedColor": "#1afa29",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath": "images/index.png",
+        "selectedIconPath": "images/index-selected.png"
+      },
+      {
+        "pagePath": "pages/frame/frame",
+        "text": "框架",
+        "iconPath": "images/frame.png",
+        "selectedIconPath": "images/frame-selected.png"
+      },
+      {
+        "pagePath": "pages/template/template",
+        "text": "组件",
+        "iconPath": "images/template.png",
+        "selectedIconPath": "images/template-selected.png"
+      }
+    ]
+  },
+  "debug": false
+}

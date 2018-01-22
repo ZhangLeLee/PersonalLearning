@@ -1,0 +1,7 @@
+/* pages/frame/frame.wxss */
+@import 'test.wxss';
+.cont{
+  width: 375rpx;
+  height: 200rpx;
+  background-color: red;
+}

@@ -1,0 +1,41 @@
+{
+  "pages": [
+    "pages/api/api",
+    "pages/templ/templ",
+    "pages/frame/frame",
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/test/test"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#000",
+    "navigationBarTitleText": "首页",
+    "navigationBarTextStyle": "white"
+  },
+  "tabBar": {
+    "color": "#8a8a8a",
+    "selectedColor": "#1afa29",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath": "images/shou.png",
+        "selectedIconPath": "images/shou-action.png"
+      },
+      {
+        "pagePath": "pages/frame/frame",
+        "text": "框架",
+        "iconPath": "images/kuang.png",
+        "selectedIconPath": "images/kuang-action.png"
+      },
+      {
+        "pagePath": "pages/templ/templ",
+        "text": "组件",
+        "iconPath": "images/zujian.png",
+        "selectedIconPath": "images/zujian-action.png"
+      }
+    ]
+  },
+  "debug": false
+}

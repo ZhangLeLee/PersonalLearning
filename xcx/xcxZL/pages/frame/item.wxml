@@ -1,0 +1,7 @@
+<!-- import引用 -->
+<!-- <template name="item">
+  <text>我是公共模块{{name}}</text>
+</template> -->
+
+<!-- include引用 -->
+ <text>我是公共模块{{name}}</text>

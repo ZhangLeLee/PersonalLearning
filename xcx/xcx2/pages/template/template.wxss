@@ -1,0 +1,42 @@
+/* pages/template/template.wxss */
+.wrap{
+  /* display: flex; */
+   /* flex-direction: row-reverse;  */
+   /* justify-content: space-between;  */
+  /* flex-direction:column; */
+  width:500rpx;
+  height:500rpx;
+  border:1rpx red solid;
+}
+.wrap view{
+  width:400rpx;
+  height:600rpx;
+}
+.red{
+  background-color: red;
+}
+.blue{
+  background-color: blue;
+}
+.green{
+  background-color: green;
+}
+.yellow{
+  background-color: yellow;
+}
+.cont{
+  font-size:100rpx;
+  color:red;
+}
+.active{
+  color:red;
+}
+textarea{
+  border:1px red solid;
+}
+map{width:500rpx;height:400rpx;}
+canvas{
+  width:500rpx;
+  height:500rpx;
+  border:1px red solid;
+}

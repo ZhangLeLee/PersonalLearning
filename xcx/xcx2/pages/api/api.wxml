@@ -1,0 +1,15 @@
+<button bindtap="getData">请求获取数据</button>
+<view wx:for="{{dataArr}}">
+  {{item.name}}
+</view>
+
+<button bindtap='chooseImg'>选择图片</button>
+<image src="{{imgSrc}}" />
+
+<button bindtap='login'>登录</button>
+<button bindtap='seeLoad'>检测登录状态</button>
+<button bindtap='getInfo'>获取用户信息</button>
+<view>
+  <image src="{{photoUrl}}" />
+  <text>{{username}}</text>
+</view>

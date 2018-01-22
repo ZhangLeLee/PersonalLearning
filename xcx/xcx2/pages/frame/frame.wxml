@@ -1,0 +1,66 @@
+<!--pages/frame/frame.wxml-->
+<!-- <text>{{name}}</text>
+<view>{{age}}</view>
+<view>{{arr[2]}}</view> -->
+<!-- <button bindtap="goOther">跳转到组件页</button> -->
+<!-- <navigator url="../../pages/logs/logs">跳转到logs页面</navigator>
+<button bindtap='say' id="{{name}}">说hi</button>
+<view wx:if="{{bol}}">我想显示</view>
+<view wx:if="{{age<20}}">年龄太大</view>
+<view>{{2*11}}</view>
+<view>{{2}}*{{1}}</view>
+
+<view wx:for="{{jsonArr}}">{{item.a}}+{{item.b}}</view> -->
+<!-- <view wx:for="{{arr}}" >{{item}},{{index}}</view> -->
+
+<!-- 自定义数组元素和索引值 -->
+<!-- <view wx:for="{{arr}}" wx:for-item="i" wx:for-index="zxc">{{i}},{{zxc}}</view> -->
+
+<!-- 双层for循环，乘法口诀表 -->
+<!-- <view wx:for="{{arri}}" wx:for-item="i">
+  <view wx:for="{{arrj}}" wx:for-item="j" style="display:inline-block;border:1px red solid">
+    <block wx:if="{{i>=j}}">
+    {{i}}*{{j}}={{i*j}}
+    </block>
+  </view>
+</view> -->
+
+<!-- wx:if/hidden -->
+<!-- <button bindtap='likeBtn'>切换</button>
+<text hidden="{{bol}}">不</text>喜欢我 -->
+
+<!-- 定义一个模块 -->
+<!-- <template name="obj">
+  <view>{{a}},{{b}}</view>
+  <view>{{a}}</view>
+</template> -->
+<!-- 使用模块 -->
+<!-- <template is="obj" data="{{...obj,c:2}}"></template> -->
+
+<!-- 事件 -->
+<!-- <view bindtap="clickTarget" id="10">点击</view> -->
+
+<!-- <view id="outer" bindtap='outerTap'>
+  outer content
+  <view id="middle" catchtap='middleTap'>
+    middel content
+    <view id="inner" catchtap='innerTap' data-item-id="123">
+      inner content
+    </view>
+  </view>
+</view> -->
+
+<!-- 引用 -->
+<!-- import -->
+<!-- <import src="item.wxml" /> -->
+<!-- 使用模块 -->
+<!-- <template is="item" data="{{name:'woshihaoren'}}"></template> -->
+<!-- include引用相当于把代码直接搬过来 -->
+<!-- <include src="item.wxml" /> -->
+
+<!-- wxs -->
+<!-- <wxs src="frame.wxs" module="frame" />
+<view>{{frame.a}},{{frame.str}}</view> -->
+
+<view class="cont" style="width:{{w}};"></view>
+

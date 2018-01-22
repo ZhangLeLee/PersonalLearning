@@ -1,0 +1,9 @@
+// 传递一个变量
+module.exports={
+  a:1,
+  b:2
+}
+
+var a = 10;
+a = 10; a |= 3;
+console.log(11 === a);

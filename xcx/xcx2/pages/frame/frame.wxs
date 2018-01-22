@@ -1,0 +1,5 @@
+//传递一个变量
+module.exports={
+  a:1,
+  str:"hello world"
+}

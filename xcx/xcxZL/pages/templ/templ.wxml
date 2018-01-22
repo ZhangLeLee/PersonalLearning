@@ -1,0 +1,170 @@
+<!-- view -->
+<!-- <view class='wrap'>
+  <view class='red' hover-class="yellow" hover-start-time="1000"></view>
+  <view class='blue'></view>
+  <view class='green'></view>
+</view> -->
+
+
+<!-- scroll-view -->
+<!-- <scroll-view class='wrap' scroll-y="true" scroll-into-view="{{toWhere}}" bindtap='goto' scroll-with-animation="true" enable-back-to-top="true" bindscrolltoupper="loadJson">
+  <view class='red' id='red'>1</view>
+  <view class='blue' id='blue'>2</view>
+  <view class='green' id='green'>3</view>
+</scroll-view> -->
+
+
+<!-- swiper   -->
+<!-- <swiper indicator-dots="true" autoplay="true" interval='1500' circular="true" bindchange="changeCur">
+  <swiper-item wx:for="{{imgData}}">
+    <image src='{{item}}'></image>
+  </swiper-item>
+</swiper> -->
+
+
+<!-- movable-area -->
+<!-- <view class="section">
+  <view class="section__title">movable-view区域小于movable-area</view>
+  <movable-area style="height: 200px;width: 200px;background: red;">
+    <movable-view style="height: 50px; width: 50px; background: blue;" x="{{x}}" y="{{y}}" direction="all">
+    </movable-view>
+  </movable-area>
+  <view class="btn-area">
+    <button size="mini" bindtap="tap">click me to move to (30px, 30px)</button>
+  </view>
+  <view class="section__title">movable-view区域大于movable-area</view>
+  <movable-area style="height: 100px;width: 100px;background: red;" direction="all">
+    <movable-view style="height: 200px; width: 200px; background: blue;">
+    </movable-view>
+  </movable-area>
+</view> -->
+
+
+
+<!-- 基础组件 -->
+
+<!-- icon -->
+<!-- <icon type='success' size='20' color='red'></icon> -->
+<!-- <icon wx:for="{{iconList}}" type='{{item}}' size='50'></icon> -->
+
+
+<!-- text -->
+<!-- <text selectable="true" space='&nbsp' decode="true">&nbsp;&nbsp;&nbsp;&nbsp;这里&lt;&lt;是写&gt;&gt;文本&amp;&ensp;&emsp;的this &apos; &apos;istext</text> -->
+
+
+<!-- rich-text -->
+<!-- <rich-text nodes="{{nodes}}" bindtap="nodeabout"></rich-text> -->
+
+
+<!-- progress -->
+<!-- <progress percent="{{progressNum}}" show-info="true" stroke-width="20" color="#fefccc"></progress> -->
+
+<!-- <progress percent="20" show-info />
+<progress percent="40" stroke-width="12" />
+<progress percent="60" color="pink" />
+<progress percent="80" active /> -->
+
+
+
+<!-- 表单组件 -->
+
+<!-- button -->
+<!-- <button hover-class="btnActive" hover-start-time="1000">按钮</button> -->
+<!-- <button hover-class="btnActive" hover-stay-time="2000">按钮</button> -->
+
+
+<!-- checkbox -->
+<!-- <checkbox-group bindchange="checkboxChange">
+  <label wx:for='{{genders}}'>
+    <checkbox value='{{item.value}}' checked='{{item.checked}}' />{{item.value}}
+  </label>
+</checkbox-group> -->
+
+
+<!-- input -->
+<!-- form -->
+<!-- <form>
+  <input value='' type='text' bindinput='inputChange' />
+</form> -->
+
+<!-- <form bindsubmit='formSubmit' report-submit='true' id='123'>
+  <input value='' type='text' bindinput='inputChange' name="userName" placeholder='请输入您的用户名' />
+   <button form-type='submit'>提交</button> 
+</form> -->
+   <!-- <button form-type='reset'>重置</button>  -->
+
+
+<!-- picker 默认 -->
+<!-- <form>
+  <picker bindchange='pickerChange' value='index' range='{{pickerArr}}'>
+    <view>当前选择: {{pickerArr[index]}}</view>
+  </picker>
+  <button form-type='submit'>提交</button>
+</form> -->
+
+
+<!-- picker 多列 -->
+<!-- <form>
+  <picker mode="multiSelector" bindchange='pickerCol' bindcolumnchange="pinkerColChange" value='{{colindex}}' range='{{multiArray}}'>
+    <view>当前选择: {{multiArray[0][colindex[0]]}}, {{multiArray[1][colindex[1]]}}, {{multiArray[2][colindex[2]]}}</view>
+  </picker>
+  <button form-type='submit'>提交</button>
+</form> -->
+
+
+<!-- picker 时间 -->
+<!-- <form>
+  <picker mode="time" value="{{timeNum}}" start="09:00" end="18:00" bindchange='timeChange'> 
+    <view>当前时间: {{timeNum}}</view>
+  </picker>
+</form>  -->
+
+
+<!-- picker 日期 -->
+<!-- <form>
+  <picker mode="date" value="{{dateNum}}" start="09:00" end="18:00" bindchange='dateChange'> 
+    <view>当前日期: {{dateNum}}</view>
+  </picker>
+</form>  -->
+
+
+<!-- radio 单选框 -->
+<!-- <form>
+  <radio-group bindchange="radioChange" name="radio">
+  <label wx:for='{{genders}}'>
+    <radio value='{{item.value}}' checked='{{item.checked}}' color='blue' />{{item.value}}
+  </label>
+  </radio-group>
+  <button form-type="submit">提交</button>
+</form> -->
+
+
+<!-- slider 滚动条 -->
+<!-- <form bindsubmit='formSubmit'>
+  <slider show-value step='10' value='40' name="slider"></slider>
+  <button form-type="submit">提交</button>
+</form> -->
+
+
+<!-- switch 开关选择器 -->
+<!-- <form bindsubmit='formSubmit'>
+  <switch checked='true' bindchange='switchChange'></switch>
+</form> -->
+
+
+<!-- textarea 多行输入框 -->
+<!-- <form bindsubmit='formSubmit'>
+  <textarea value='' placeholder='请输入内容' auto-height bindlinechange="textareaChange"></textarea>
+</form> -->
+
+
+<!-- navigator -->
+
+<form bindsubmit='formSubmit'>
+  <navigator url='../../pages/logs/logs' hover-class="navigator-hover">跳转</navigator>
+</form> 
+
+
+
+
+

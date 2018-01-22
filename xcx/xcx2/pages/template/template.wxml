@@ -1,0 +1,107 @@
+<!-- view -->
+<!-- <view class="wrap">
+  <view class="red" hover-class="yellow" hover-start-time="2000"></view>
+  <view class="blue"></view>
+  <view class="green"></view>
+</view> -->
+
+<!-- scroll-view -->
+<!-- <scroll-view class="wrap" scroll-y="true" scroll-into-view="{{toWhere}}" bindtap="goto" scroll-with-animation="true" enable-back-to-top="true" bindscrolltolower="laodJson" lower-threshold="150">
+  <view class="red" id="red">1</view>
+  <view class="blue">2</view>
+  <view class="green" id="green">3</view>
+</scroll-view> -->
+
+<!-- swiper -->
+ <!-- <swiper indicator-dots="true" autoplay="true" interval="2000" duration="1000" circular="true" bindchange="changeCur">
+  <swiper-item wx:for="{{imgData}}">
+    <image src="{{item}}" mode="widthFix" lazy-load></image>
+  </swiper-item>
+</swiper>  -->
+
+<!-- 基础组件 -->
+<!-- icon -->
+<!-- <icon type="success" size="100"/> -->
+<!-- <icon wx:for="{{iconList}}" type="{{item}}" size="100"/> -->
+
+<!-- text -->
+<!-- <text selectable="true" space="nbsp" decode='true'>he&ensp;heh&amp;&apos;&nbsp;eh</text> -->
+
+<!-- rich-text -->
+<!-- <rich-text nodes="{{nodes}}" bindtap="nodeabout"></rich-text> -->
+
+<!-- progress -->
+<!-- <progress percent="{{progressNum}}" show-info="true" stroke-width="20" ></progress> -->
+
+<!-- 表单组件 -->
+<!-- button -->
+<!-- <button hover-class='active' hover-stay-time="1000">按钮</button> -->
+
+<!-- checkbox -->
+<!-- <checkbox-group bindchange="chooseGender">
+    <label wx:for="{{genders}}">
+      <checkbox value="{{item.value}}" checked='{{item.checked}}'/>{{item.value}}
+    </label>
+</checkbox-group> -->
+
+<!-- input -->
+<!-- form -->
+<form bindsubmit='formSubmit'>
+  <input value='' type='text' bindinput='inputChange' name="userName" placeholder='请输入您的用户名'  />
+
+  <!-- picker 默认 -->
+  <picker bindchange='pickerChange' value='{{index}}' range='{{pickerArr}}'>
+    <view>当前选择：{{pickerArr[index]}}</view>
+  </picker>
+
+  <!-- picker 多列 -->
+  <!-- <picker mode="multiSelector" bindchange='pickerCol' bindcolumnchange="pickerColChange" value='{{colindex}}' range='{{multiArray}}'>
+    <view>当前选择：{{multiArray[0][colindex[0]]}}-{{multiArray[1][colindex[1]]}}-{{multiArray[2][colindex[2]]}}</view>
+  </picker> -->
+
+  <!-- picker 时间 -->
+  <!-- <picker mode="time" value='{{timeNum}}' start="09:10" end="21:00" bindchange='timeChange'>
+    <view>当前选择：{{timeNum}}</view>
+  </picker> -->
+
+  <!-- picker 日期 -->
+  <!-- <picker mode="date" value='{{timeNum}}' start="1990-01-01" end="1999-12-30" bindchange='timeChange'>
+    <view>当前选择：{{timeNum}}</view>
+  </picker> -->
+
+  <!-- radio -->
+  <!-- <radio-group bindchange="radioChange" name="radio">
+    <label wx:for="{{genders}}">
+      <radio value="{{item.value}}" checked='{{item.checked}}' color="red"/>{{item.value}}
+    </label>
+  </radio-group> -->
+
+  <!-- slider -->
+  <!-- <slider show-value min="18" max="100" step='5' name="slider"></slider> -->
+  
+  <!-- switch -->
+  <!-- <switch checked='true' bindchange='switchChange'></switch> -->
+
+  <!-- textarea -->
+  <!-- <textarea placeholder='请输入聊天内容' auto-height bindinput="textareaChange"></textarea> -->
+
+  <!-- navigator 导航组件 -->
+  <!-- <navigator url="../../pages/logs/logs">跳转</navigator> -->
+
+  <!-- 媒体组件 -->
+  <!-- <audio id="audioMy" src="{{audioSrc}}" controls poster="{{posterPhoto}}" name="好听" author="忘了" loop></audio>
+  <view>
+    <button type="primary" size="mini" bindtap='audioPlay'>播放</button>
+    <button type="primary" size="mini" bindtap='audioPause'>暂停</button>
+    <button type="primary" size="mini" bindtap='audioSeek'>设置播放时间</button>
+    <button type="primary" size="mini" bindtap='audioStart'>重新开始</button>
+  </view> -->
+
+  <!-- 地图 map -->
+  <!-- <map longitude='113.5590013' latitude='34.8273272' scale="10" markers="{{markers}}" show-location></map> -->
+
+  <!-- canvas -->
+  <canvas canvas-id='myCanvas'></canvas>
+
+  <button form-type='submit'>提交</button>
+</form>
